@@ -9,7 +9,7 @@ import {
   isRouteErrorResponse,
   useRouteError,
 } from "@remix-run/react";
-
+import { Analytics } from "@vercel/analytics/react"
 
 import stylesheet from "~/styles/tailwind.css?url";
 
@@ -31,6 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Navigation />
         <ScrollRestoration />
         <Scripts />
+        <Analytics />
       </body>
     </html>
   );
@@ -107,7 +108,6 @@ export function Navigation() {
     </nav>
   );
 }
-
 
 export function ErrorBoundary() {
   const error = useRouteError();
