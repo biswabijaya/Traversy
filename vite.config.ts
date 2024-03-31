@@ -8,6 +8,9 @@ import { flatRoutes } from "remix-flat-routes";
 installGlobals();
 
 export default defineConfig({
+  server: {
+    port: 3001,
+  },
   plugins: [remix({
     ignoredRouteFiles: ["**/*", "**/.*"],
     routes: async defineRoutes => {

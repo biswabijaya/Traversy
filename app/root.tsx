@@ -15,9 +15,14 @@ import { SpeedInsights } from "@vercel/speed-insights/remix"
 
 
 import stylesheet from "~/styles/tailwind.css?url";
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css?url';
 
 export const links: LinksFunction = () => {
-  return [{ rel: "stylesheet", href: stylesheet }];
+  return [
+    { rel: "manifest", href: "/app.manifest"},
+    { rel: "stylesheet", href: stylesheet },
+    { rel: "stylesheet", href: bootstrap },
+  ];
 };
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -26,6 +31,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="theme-color" content="#ffffff" /> */}
         <Meta />
         <Links />
       </head>

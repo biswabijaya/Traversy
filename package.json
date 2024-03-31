@@ -16,13 +16,17 @@
     "@remix-run/serve": "^2.8.1",
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
+    "bootstrap": "^5.3.3",
     "isbot": "^4.1.0",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@remix-run/dev": "^2.8.1",
+    "@types/bootstrap": "^5.2.10",
     "@types/react": "^18.2.20",
+    "@types/react-bootstrap": "^0.32.36",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.7.4",
     "@typescript-eslint/parser": "^6.7.4",
