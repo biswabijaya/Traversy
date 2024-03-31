@@ -1,41 +1,36 @@
-# React Jobs Project (YouTube)
+# Welcome to Remix + Vite!
 
-This is the jobs listing project from the [YouTube crash course](https://youtu.be/LDB4uaJ87e0).
+📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/future/vite) for details on supported features.
 
-## Usage
+## Development
 
-This project uses JSON-Server for a mock backend.
+Run the Vite dev server:
 
-### Install Dependencies
-
-```bash
-npm install
-```
-
-### Run JSON Server
-
-The server will run on http://localhost:8000
-
-```bash
-npm run server
-```
-
-### Run Vite Frontend
-
-React will run on http://localhost:3000
-
-```bash
+```shellscript
 npm run dev
 ```
 
-### Build for Production
+## Deployment
 
-```bash
+First, build your app for production:
+
+```sh
 npm run build
 ```
 
-### Preview Production Build
+Then run the app in production mode:
 
-```bash
-npm run preview
+```sh
+npm start
 ```
+
+Now you'll need to pick a host to deploy it to.
+
+### DIY
+
+If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
+
+Make sure to deploy the output of `npm run build`
+
+- `build/server`
+- `build/client`
