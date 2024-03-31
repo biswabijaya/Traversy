@@ -2,15 +2,15 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Home | Welcome to My Remix App" },
-    { name: "description", content: "Welcome to my Remix!" },
+    { title: "About" },
+    { name: "description", content: "About" },
   ];
 };
 
-export default function Index() {
+export default function About() {
   return (
     <h1 className="text-3xl font-bold underline">
-      Home
+      About
     </h1>
   );
 }

@@ -3,15 +3,16 @@ import { useParams } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Posts | Post | Reviews | View Review" },
-    { name: "description", content: "View Review" },
+    { title: "Posts | View Post" },
+    { name: "description", content: "View Post" },
   ];
 };
 
-export default function Review() {
+
+export default function Post() {
   return (
     <span className="text-3xl font-bold underline">
-      ID({useParams().ReviewID})
+      ID({useParams().PostID})
     </span>
   );
 }

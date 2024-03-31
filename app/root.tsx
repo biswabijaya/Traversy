@@ -47,6 +47,16 @@ export function Navigation() {
             </Link>
         </li>
         <li>
+          <Link to="/about" className="text-1xl font-semibold">
+              About (/about)
+            </Link>
+        </li>
+        <li>
+          <Link to="/contact" className="text-1xl font-semibold">
+              Contact (/contact)
+            </Link>
+        </li>
+        <li>
           <span className="text-1xl font-semibold">
             Account
           </span>

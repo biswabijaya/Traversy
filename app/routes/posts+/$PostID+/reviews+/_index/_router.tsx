@@ -2,15 +2,14 @@ import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Account | Customer | Dashboard" },
-    { name: "description", content: "Dashboard" },
+    { title: "Posts | Post | Reviews | All Reviews" },
+    { name: "description", content: "View Reviews" },
   ];
 };
-
-export default function Dashboard() {
+export default function All () {
   return (
     <span className="text-3xl font-bold underline">
-      Dashboard
+      All Reviews
     </span>
   );
 }
