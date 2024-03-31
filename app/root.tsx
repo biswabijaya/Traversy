@@ -9,7 +9,10 @@ import {
   isRouteErrorResponse,
   useRouteError,
 } from "@remix-run/react";
+
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/remix"
+
 
 import stylesheet from "~/styles/tailwind.css?url";
 
@@ -32,6 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <ScrollRestoration />
         <Scripts />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
